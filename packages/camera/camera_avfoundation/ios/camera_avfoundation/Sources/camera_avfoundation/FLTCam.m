@@ -331,7 +331,7 @@ static void selectBestFormatForRequestedFrameRate(
       [AVCaptureConnection connectionWithInputPorts:_captureVideoInput.ports
                                              output:_captureVideoOutput];
   if ([_captureDevice position] == AVCaptureDevicePositionFront) {
-    connection.videoMirrored = YES;
+    connection.videoMirrored = NO;
   }
 
   return connection;
